@@ -292,13 +292,15 @@ public class QuizzMain extends JFrame {
 	}
 
 	public void proceedFile() {
+		int NbrLine = 35;
 		// On genere un nombre aléatoire pour chercher une questions dans la liste
 		Random random = new Random();
-		int randomValue = random.nextInt(35 + 0) + 0;
+		int randomValue = random.nextInt(NbrLine + 0) + 0;
 		// On regarde si le nombre est deja dans la liste
+		// Si c'est le cas on genere un autre nombre
 		while (thisQuizz.getIsAllreadyRead().contains(randomValue) == true) {
 
-			randomValue = random.nextInt(35 + 0) + 0;
+			randomValue = random.nextInt(NbrLine + 0) + 0;
 		}
 
 		thisQuizz.setIsAllreadyRead(thisQuizz.getIsAllreadyRead(), randomValue);
@@ -321,7 +323,7 @@ public class QuizzMain extends JFrame {
 
 		String line;
 
-		for (int i = 0; i < 35; i++) {
+		for (int i = 0; i < NbrLine; i++) {
 			line = input.nextLine();
 			// on cherche la ligne texte qui correspond au nombre aléatoire
 
