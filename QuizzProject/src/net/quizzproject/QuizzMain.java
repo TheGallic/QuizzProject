@@ -103,11 +103,11 @@ public class QuizzMain extends JFrame {
 		rdbtnA.setSelected(true);
 
 		rdbtnA.setFont(new Font("Tahoma", Font.PLAIN, 14));
-
+	
 		rdbtnB.setFont(new Font("Tahoma", Font.PLAIN, 14));
 
 		rdbtnC.setFont(new Font("Tahoma", Font.PLAIN, 14));
-
+	
 		rdbtnD.setFont(new Font("Tahoma", Font.PLAIN, 14));
 
 		ButtonGroup bg = new ButtonGroup();
